@@ -1,7 +1,7 @@
 
   // write your code here
-	const byteSize = (str) => {
-    return new TextEncoder().encode(str).length;
+   const byteSize = (str) => {
+    return new Blob([str]).size;
 }
 // Examples
 console.log(byteSize('hello world')); // 11
